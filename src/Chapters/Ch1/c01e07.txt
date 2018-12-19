@@ -1,0 +1,7 @@
+(∗1.5) List the major components of the C++ standard library.
+
+containers (vector, map, lists...)
+algorithm to work on them
+through iterators
+strings
+streams

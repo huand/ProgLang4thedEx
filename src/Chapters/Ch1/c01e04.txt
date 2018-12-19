@@ -1,0 +1,6 @@
+(∗1) What are the main programming styles supported by C++?
+
+• Procedural programming
+• Data abstraction
+• Object-oriented programming
+• Generic programming

@@ -1,0 +1,6 @@
+(∗1) List three (or more) advantages from having a library as part of the standard.
+
+1- bug free?
+2- long term availability
+3- portability?
+4- everyone knows it

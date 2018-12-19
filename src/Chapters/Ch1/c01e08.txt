@@ -1,0 +1,7 @@
+(∗1.5) List five libraries that you would have liked to be part of the standard.
+
+1-linear algebra?
+2-gui
+3-numerical optimization
+4-plotting lib
+5-folder/file mangement

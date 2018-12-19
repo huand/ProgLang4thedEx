@@ -1,0 +1,24 @@
+(∗3) List 20 major real-world C++ applications.
+
+01-device drivers
+02-communications stacks
+03-virtual machines
+04-operating systems
+05-operations systems
+06-programming environments
+07-foundation libraries
+08-Amadeus (airline ticketing)
+09-Amazon (Web commerce)
+10-Bloomberg (financial information)
+11-Google (Web search)
+12-Facebook (social media)
+13-Java Virtual Machines (e.g., Oracle’s HotSpot), JavaScript interpreters (e.g., Google’s V8)
+14-browsers (e.g., Microsoft’s Internet Explorer, Mozilla’s Firefox,
+Apple’s Safari, and Google’s Chrome)
+15-application frameworks (e.g., Microsoft’s .NET Web
+services framework)
+16-games
+17-computer tomography (CAT scanners)
+18-flight control software (e.g., Lockheed-Martin), rocket control,
+19-ship’s engines (e.g., the control of the world’s largest marine diesel engines from MAN)
+20-automobile software (e.g., BMW), and wind turbine control (e.g., Vesta)

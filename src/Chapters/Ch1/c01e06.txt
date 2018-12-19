@@ -1,0 +1,9 @@
+(∗3) Describe the difference between dynamic (run-time) and static (compile-time) type
+checking and outline the strengths and weaknesses of each.
+
+compile time checking: check type compatibility at compile 
+time, saving trouble before execution and ensuring coherency
+ in the program
+
+dynamic type checking: more flexible but more prone to mistakes?
+polymorphism?

@@ -1,0 +1,62 @@
+(∗2.5) List five language features offered by the 1985 version 
+of C++, five features added by C++98, and finally five new 
+features added by C++11. In each case, order the features in
+order of importance and for each feature write a sentence 
+describing its role in programming.
+
+1985
+1-Classes support all of the mentioned styles; all rely on
+the user representing ideas as user-defined types or objects
+of user-defined types.
+2-Public/private access control supports data abstraction
+and object-oriented programming by making a clear distinction
+between interface and implementation.
+3-Member functions, constructors, destructors, and
+user-defined assignment provide a clean functional interface
+to objects as needed by data abstraction and object-oriented
+programming. They also provide a uniform notation as needed
+for generic programming. More general overloading had to wait
+until 1984 and uniform initialization until 2010.
+4-Function declarations provide specific statically checked
+interfaces to member functions as well as freestanding
+functions, so they support all of the mentioned styles. They
+are necessary for overloading. At the time, C lacked 
+‘‘function prototypes’’ but Simula had function declarations
+as well as member functions.
+5-Generic functions and parameterized types (generated from
+functions and classes using macros) support generic
+programming. Templates had to wait until 1988.
+
+C++98
+1-Templates
+
+C++11
+• Control of defaults: =delete and =default : §3.3.4, §17.6.1, §17.6.4; Lawrence Crowl and
+Bjarne Stroustrup.
+• Deducing the type of an object from its initializer, auto : §2.2.2, §6.3.6.1; Bjarne Stroustrup.
+I first designed and implemented auto in 1983 but had to remove it because of C compatibil-
+ity problems.
+• Generalized constant expression evaluation (including literal types), constexpr : §2.2.3,
+§10.4, §12.1.6; Gabriel Dos Reis and Bjarne Stroustrup [DosReis,2010].
+• In-class member initializers: §17.4.4; Michael Spertus and Bill Seymour.
+• Inheriting constructors: §20.3.5.1; Bjarne Stroustrup, Michael Wong, and Michel Michaud.
+• Lambda expressions, a way of implicitly defining function objects at the point of their use in
+an expression: §3.4.3, §11.4; Jaakko Jarvi.
+• Move semantics, a way of transmitting information without copying: §3.3.2, §17.5.2;
+Howard Hinnant.
+• A way of stating that a function may not throw exceptions noexcept : §13.5.1.1; David Abra-
+hams, Rani Sharoni, and Doug Gregor.
+• A proper name for the null pointer, §7.2.2; Herb Sutter and Bjarne Stroustrup.
+• The range- for statement: §2.2.5, §9.5.1; Thorsten Ottosen and Bjarne Stroustrup.
+• Override controls: final and override : §20.3.4. Alisdair Meredith, Chris Uzdavinis, and Ville
+Voutilainen.
+• Type aliases, a mechanism for providing an alias for a type or a template. In particular, a
+way of defining a template by binding some arguments of another template: §3.4.5, §23.6;
+Bjarne Stroustrup and Gabriel Dos Reis.
+• Typed and scoped enumerations: enum class : §8.4.1; David E. Miller, Herb Sutter, and
+Bjarne Stroustrup.
+• Universal and uniform initialization (including arbitrary-length initializer lists and protec-
+tion against narrowing): §2.2.2, §3.2.1.3, §6.3.5, §17.3.1, §17.3.4; Bjarne Stroustrup and
+Gabriel Dos Reis.
+• Variadic templates, a mechanism for passing an arbitrary number of arguments of arbitrary
+types to a template: §3.4.4, §28.6; Doug Gregor and Jaakko Jarvi.

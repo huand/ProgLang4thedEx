@@ -1,0 +1,6 @@
+(∗2) Briefly describe the design aims of C++ and comment on the extent to which C++ meets
+those.
+
+C++ is a general programming language, ok for abstraction
+ (classes, template, stl, etc) but also ok for computational
+  algorithmic. c++ meets those 8/10
