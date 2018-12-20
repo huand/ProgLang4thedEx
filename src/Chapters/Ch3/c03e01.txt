@@ -1,0 +1,20 @@
+1- uniform initialization (double d{2.421}) better than = initialization
+because no possible narrowing conversion from =
+
+2- x%=y
+
+3- constexpr :
+
+4- for (auto i=0; i!=10; ++i) speed?
+
+5- nullptr
+
+6-This is the basic technique for
+handling varying amounts of information in C++: a fixed-size handle referring to a variable amount
+of data ‘‘elsewhere’’ (e.g., on the free store allocated by new ; §11.2).
+
+7- enum class Color { red, blue , green };
+
+8- The out_of_range type is defined in the standard library
+
+9- static_assert(

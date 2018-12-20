@@ -1,0 +1,2 @@
+a compiler compiles source files
+a linker links source files to create an executable file
