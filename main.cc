@@ -2,7 +2,7 @@
 
 #include "include/all_chapters.h"
 
-main(int argc, char const *argv[]) {
-  c01e01();
+int main(int argc, char const *argv[]) {
+  c03e03();
   return 0;
 }

@@ -3,12 +3,12 @@ cmake_minimum_required (VERSION 3.0)
 set(CXXFLAGS = -std=c++17 -Wconversion -Wall -Werror -Wextra -pedantic)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 file( GLOB SRC_CH_01 src/Chapters/Ch1/*.cc )
-file( GLOB SRC_CH_02 srd/Chapters/Ch2/*.cc )
-file( GLOB SRC_CH_03 srd/Chapters/Ch3/*.cc )
-file( GLOB SRC_CH_04 srd/Chapters/Ch4/*.cc )
-file( GLOB SRC_CH_05 srd/Chapters/Ch5/*.cc )
-file( GLOB SRC_CH_06 srd/Chapters/Ch6/*.cc )
-file( GLOB SRC_CH_07 srd/Chapters/Ch7/*.cc )
+file( GLOB SRC_CH_02 src/Chapters/Ch2/*.cc )
+file( GLOB SRC_CH_03 src/Chapters/Ch3/*.cc )
+file( GLOB SRC_CH_04 src/Chapters/Ch4/*.cc )
+file( GLOB SRC_CH_05 src/Chapters/Ch5/*.cc )
+file( GLOB SRC_CH_06 src/Chapters/Ch6/*.cc )
+file( GLOB SRC_CH_07 src/Chapters/Ch7/*.cc )
 add_library(strstrlib
 ${SRC_CH_01}
 ${SRC_CH_02}
