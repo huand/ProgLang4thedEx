@@ -1,12 +1,14 @@
 // Copyright 2018 Hubert Andre
 
 #include <iostream>
+#include <vector>
 
 void c00e00() {
-  int x[]{1, 100, 1000, 1111, 666, 69};
+  std::vector<int> v{1, 2, 3};
 
-  for (auto& i : x) {
-    std::cout << i << " ";
+  try {
+    std::cout << v.at(4) << std::endl;
+  } catch (const std::exception& e) {
+    std::cerr << e.what() << '\n';
   }
-  std::cout << std::endl;
 }

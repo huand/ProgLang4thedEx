@@ -1,0 +1,4 @@
+1- Functions defined in a class are inlined by default.
+2- complex operator+(complex a, complex b) { return a+=b; }
+3- public: Vector(std::initializer_list<double>);
+4- As is common for abstract classes, Container does not have a constructor.
