@@ -1,4 +1,11 @@
-1- Functions defined in a class are inlined by default.
-2- complex operator+(complex a, complex b) { return a+=b; }
-3- public: Vector(std::initializer_list<double>);
-4- As is common for abstract classes, Container does not have a constructor.
+01- Functions defined in a class are inlined by default.
+02- complex operator+(complex a, complex b) { return a+=b; }
+03- public: Vector(std::initializer_list<double>);
+04- As is common for abstract classes, Container does not have a constructor.
+05- unique_ptr which will delete the object when it is no longer needed,
+0that is, when its unique_ptr goes out of scope.
+06- Vector(Vector&& a); // move constructor
+07-  The && means ‘‘rvalue reference’’ and is a reference to which we can bind an rvalue
+08- Shape(Shape&&) =delete; +copy+.. in hierarchy
+09- template<typename T>
+10- functor
