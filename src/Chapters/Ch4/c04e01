@@ -8,4 +8,4 @@
 07-  The && means ‘‘rvalue reference’’ and is a reference to which we can bind an rvalue
 08- Shape(Shape&&) =delete; +copy+.. in hierarchy
 09- template<typename T>
-10- functor
+10- functor (faster than function calls because inlining)

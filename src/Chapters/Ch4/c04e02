@@ -4,3 +4,10 @@ built-in:
 3-char
 4-bool
 5-double
+
+!built-in
+1-boat
+2-car
+3-house
+4-book
+5-bank account
