@@ -1,5 +1,9 @@
 {
     "cpplint.cpplintPath": "/home/hubert/.local/bin/cpplint",
-    "C_Cpp.clang_format_fallbackStyle": "Google"
-    
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "cpplint.excludes": [
+        "build/CMakeFiles/3.12.3/CompilerIdCXX/**",
+        "build/CMakeFiles/3.12.3/CompilerIdC/**",
+        "build/CMakeFiles/**"
+    ]
 }
