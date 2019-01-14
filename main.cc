@@ -3,6 +3,6 @@
 #include "include/all_chapters.h"
 
 int main(int argc, char const *argv[]) {
-  c05e10();
+  c06e02();
   return 0;
 }

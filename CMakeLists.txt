@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.0)
 
-set(CXXFLAGS = -std=c++17 -Wconversion -Wall -Werror -Wextra -pedantic)
+set(CXXFLAGS = -std=c++17 -Wconversion -Wall -Werror -Wextra -pedantic -pthread)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 file( GLOB SRC_CH_00 src/Chapters/Ch0/*.cc )
 file( GLOB SRC_CH_01 src/Chapters/Ch1/*.cc )

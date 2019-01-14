@@ -6,4 +6,5 @@
 #include "Chapt_headers/Ch3.h"
 // #include "Chapt_headers/Ch4.h"
 #include "Chapt_headers/Ch5.h"
+#include "Chapt_headers/Ch6.h"
 #endif  // INCLUDE_ALL_CHAPTERS_H_

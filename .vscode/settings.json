@@ -1,9 +1,45 @@
 {
-    "cpplint.cpplintPath": "/home/hubert/.local/bin/cpplint",
-    "C_Cpp.clang_format_fallbackStyle": "Google",
+   //"C_Cpp.clang_format_fallbackStyle": "Google",
     "cpplint.excludes": [
         "build/CMakeFiles/3.12.3/CompilerIdCXX/**",
         "build/CMakeFiles/3.12.3/CompilerIdC/**",
         "build/CMakeFiles/**"
-    ]
+    ],
+    "files.associations": {
+        "thread": "cpp",
+        "condition_variable": "cpp",
+        "array": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "chrono": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "ctime": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "exception": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "memory": "cpp",
+        "mutex": "cpp",
+        "new": "cpp",
+        "ostream": "cpp",
+        "ratio": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp",
+        "utility": "cpp"
+    },
+    "C_Cpp.clang_format_style": "Google",
+    "editor.formatOnType": true
 }
