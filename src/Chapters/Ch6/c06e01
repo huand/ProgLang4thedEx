@@ -1,0 +1,45 @@
+5.2 RESSOURCE MANAGEMENT
+1- a unique_ptr is a handle to an in dividual object (or an array) in much the 
+same way that a vector is a handle to a sequence of objects. both control the 
+lifetime of other objects (using raii) and both rely on move semantics to make 
+return simple and efficient.ex:
+unique_ptr<X> make_X(int i){
+    ...
+    return unique_ptr<X>{new X{i}}; //!!!!
+}
+2- unique_lock<mutex> lck{m}
+3- X* xp = new X; (avoid) - unique_ptr<X> xp{new X} (OK!)
+4- shared_ptr similar to unique_ptr but copied instead of moved. The object is
+destroyed when the last shared_ptr is out of scope.
+5- use shared_ptr for shared objects and unique_ptr for polymorphic objects.
+6- use containers when possible.
+###############################################################################
+
+5.3 CONCURENCY
+1- concepts: thread, mutex, lock(), packaged_task, future
+2- task is fonction[std::thread t1{f,arg1,arg2,..};] or fonction object
+[std::thread t2{F(arg1,arg2,)};]
+3- finish threads with std::thread::join(); (ok synthax?)
+4- results of thread in non-const argument not elegant, prefer:future and 
+promise
+5- unique_lock<mutex> lck{m}; locks mutex until end of scope
+6- mechanism to avoid dead locks:
+unique_lock<mutex> lck1{m1,std::defer_lock};
+unique_lock<mutex> lck2{m2,std::defer_lock};
+lock(lck1, lck2);
+7- communication: shared data vs return
+8- condition_variable for communication
+mcond.wait(lck); release lck and wait for mcond. lock again after.
+mcond.notify_one(); to send a message.
+9- future and promise, packaged_task, async(); in <future>
+10- future and promise enable the transfer of a value between two tasks without
+explicit use of a lock.
+future<X> fx;
+X v=fx.get(); //wait for fx to be computed. (match the promise px.set_value())
+also px.set_exception(current_exception())
+11- packaged_task, move, TRY UNDERSTAND p122. recode???
+using double(double*, double*, double*)???
+12- async(); treat a task as a function
+auto f0=async(accum, v0, v0+sz/4, 0.0);
+async() cannot be used with shared data that needs locking.
+can be used to get info from user while rest of program runs
