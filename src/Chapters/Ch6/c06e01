@@ -43,3 +43,11 @@ using double(double*, double*, double*)???
 auto f0=async(accum, v0, v0+sz/4, 0.0);
 async() cannot be used with shared data that needs locking.
 can be used to get info from user while rest of program runs
+###############################################################################
+
+5.4 SMALL UTILITY COMPONENTS
+1- clock, duration, iterator_traits, is_arithmetic, pair, tuple
+2- using namespace std::chrono; auto t0=high_resolution_clock::now();
+duration_cast<miliseconds>(t1-t0).count(); [useful for efficiency measurements]
+3- constexpr float min=numeric_limits<float>::min();[evaluated at compile time]
+4- 
